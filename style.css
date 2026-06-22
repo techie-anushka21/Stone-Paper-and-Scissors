@@ -1,0 +1,173 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E6E6FA;
+}
+
+/* Heading properties */
+#heading{
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+    margin: 0;
+}
+
+/* Light/Dark Mode Button */ 
+#mode{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 50px;
+    width: 50px;
+    font-size: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #E6E6FA;
+}
+
+/* Sub-heading properties */
+#subHeading{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Stone Button */
+#Stone{
+    display:inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    font-size: 72.5px;
+    justify-content: center;    /* Horizontally */
+    align-items: center;    /* Vertically */
+    margin: 30px;
+    background: linear-gradient(to bottom right, blue, fuchsia);
+    box-shadow: 0 0 25px rgba(0, 0, 255, 0.5), 0 0 50px rgba(255, 0, 255, 0.6);
+}
+
+/* Paper Button */
+#Paper{
+    display:inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    font-size: 72.5px;
+    justify-content: center;    /* Horizontally */
+    align-items: center;    /* Vertically */
+    margin: 30px;
+    background: linear-gradient(to bottom right, cyan, lime);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.5), 0 0 50px rgba(0, 255, 0, 0.6);
+}
+
+/* Scissors Button */
+#Scissors{
+    display:inline-flex;
+    height: 150px;
+    width: 150px;
+    border-radius: 100px;
+    font-size: 72.5px;
+    justify-content: center;    /* Horizontally */
+    align-items: center;    /* Vertically */
+    margin: 40px;
+    background: linear-gradient(to bottom right, magenta, orange);
+    box-shadow: 0 0 25px rgba(255, 0, 127, 0.5), 0 0 50px rgba(255, 127, 0, 0.6);
+}
+
+/* div for all tool buttons */
+#tools{
+    text-align: center;
+}
+
+/*Hovering effects*/
+#Stone:hover{
+    box-shadow: 0 0 40px rgba(0,0,255,0.8), 0 0 80px rgba(255, 0, 255, 0.8);
+}
+
+#Paper:hover{
+    box-shadow: 0 0 40px rgba(0,255,255,0.8), 0 0 80px rgba(0, 255, 0, 0.8);
+}
+
+#Scissors:hover{
+    box-shadow: 0 0 40px rgba(255,0,127,0.8), 0 0 80px rgba(255, 127, 0, 0.8);
+}
+
+#Stone, #Paper, #Scissors{
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+/* table for scores - styling */
+table{
+    text-align: center;
+    margin: auto;
+    padding: 15px 30px;
+    border-collapse: separate;
+    border-spacing: 50px 5px;
+}
+
+/* table elements- styling */
+#you, #system{
+    margin: 20px, auto;
+    border-spacing: 100px, 15px;
+    font-weight: bold;
+    font-size: 22.5px;
+}
+
+/* table elements- styling */
+#yourScore, #systemScore{
+    margin: 20px, auto;
+    border-spacing: 100px, 15px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+/* div for game status - styling */
+#move{
+    display: flex;
+    height: 70px;
+    width: 380px;
+    background: linear-gradient(135deg, #2563EB 0%, #3B82F6 50%, #60A5FA 100%);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius:25px;
+}
+
+/* Responsiveness*/
+@media (max-width: 600px)
+{
+    #heading{
+        font-size: 1.5rem;
+    }
+
+    #mode{
+        height: 25px;
+        width: 25px;
+        font-size: 15px;
+    }
+
+    #Stone, #Paper, #Scissors{
+        height: 110px;
+        width: 110px;
+        font-size: 55px;
+        margin: 10px;
+    }
+
+    #move{
+        width: 90%;
+    }
+}
